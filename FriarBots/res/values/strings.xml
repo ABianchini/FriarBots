@@ -3,5 +3,9 @@
 
     <string name="hello">Hello World, FriarBotsActivity!</string>
     <string name="app_name">FriarBots</string>
+    <string name="FRC">FIRST Robotics</string>
+    <string name="team">Team 3309</string>
+    <string name="frairbots">FrairBots</string>
+    <string name="menu">Main Menu</string>
 
 </resources>

@@ -2,11 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/black" >
 
     <TextView
+        android:id="@+id/TextView_SplashFRC"
+        android:gravity="center"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:text="@string/FRC"
+        android:textSize="@dimen/title_text"
+        android:padding="@dimen/splash_padding"
+        android:textColor="@color/white" />
+    <ImageView
+        android:id="@+id/ImageView_SplashLogo"
+        android:gravity="center"
+        android:src="@drawable/logo_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/TextView_TeamNum"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team"
+        android:textSize="@dimen/title_text"
+        android:padding="@dimen/splash_padding"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/TextView_TeamName"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frairbots"
+        android:textSize="@dimen/title_text"
+        android:padding="@dimen/splash_padding"
+        android:textColor="@color/white" />
 
 </LinearLayout>
