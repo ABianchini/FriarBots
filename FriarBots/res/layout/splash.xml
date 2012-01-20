@@ -18,7 +18,7 @@
         android:id="@+id/ImageView_SplashLogo"
         android:gravity="center"
         android:src="@drawable/logo_large"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/TextView_TeamNum"
