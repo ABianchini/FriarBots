@@ -14,7 +14,7 @@ public class BotsSplashActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash);
+        setContentView(R.layout.begin);
         Animate();
     }
     private void Animate() {

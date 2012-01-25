@@ -34,8 +34,8 @@ public final class R {
         public static final int TextView_TeamNum=0x7f080002;
     }
     public static final class layout {
-        public static final int menu=0x7f030000;
-        public static final int splash=0x7f030001;
+        public static final int begin=0x7f030000;
+        public static final int menu=0x7f030001;
     }
     public static final class string {
         public static final int FRC=0x7f070002;
