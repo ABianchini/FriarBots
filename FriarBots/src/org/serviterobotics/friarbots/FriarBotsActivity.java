@@ -23,4 +23,12 @@ public class FriarBotsActivity extends BotsActivity {
     	Toast toast = Toast.makeText(this, "Hop on one foot!", Toast.LENGTH_SHORT);
     	toast.show();
     }
+    public void onShooterButtonClick(View view) {
+    	Toast toast = Toast.makeText(this, "Bang!", Toast.LENGTH_SHORT);
+    	toast.show();
+    }
+    public void onDriveSystemsButtonClick(View view) {
+    	Toast toast = Toast.makeText(this, "Drive to Michigan", Toast.LENGTH_SHORT);
+    	toast.show();
+    }
 }

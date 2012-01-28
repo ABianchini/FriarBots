@@ -2,6 +2,7 @@
 <resources>
 
     <string name="hello">Hello World, FriarBotsActivity!</string>
+    <string name="version_number">Version 0.1.2</string>
     <string name="app_name">FriarBots</string>
     <string name="FRC">FIRST Robotics</string>
     <string name="team">Team 3309</string>
@@ -14,5 +15,9 @@
     <string name="code_menu_text">Programming Committee\'s page including the code and current progress.</string>
     <string name="balance">Balance</string>
     <string name="balance_menu_text">Balance Committee\'s page including the current progress and more.</string>
+    <string name="drive_systems">Drive Systems</string>
+    <string name="drive_systems_menu_text">Drive Systems Committee\'s page including current progress and more.</string>
+    <string name="shooter">Shooter</string>
+    <string name="shooter_menu_text">Shooter Committee\'s page including current progress and more.</string>
 
 </resources>
