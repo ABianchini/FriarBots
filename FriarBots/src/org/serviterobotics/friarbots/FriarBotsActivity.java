@@ -12,7 +12,7 @@ public class FriarBotsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
     }
-    public void onActionBarButtonClick(View view) {
+    public void onStatusButtonClick(View view) {
     	startActivity(new Intent(FriarBotsActivity.this, StatusActivity.class));
     }
 }
