@@ -4,14 +4,30 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@color/black" >
-    
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/menu"
-        android:textSize="@dimen/title_text"
-        android:textColor="@color/white"
-        android:gravity="center" />
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"
+            android:padding="3dp"
+            android:layout_gravity="left" />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/menu"
+	        android:textSize="@dimen/title_text"
+	        android:textColor="@color/white"
+	        android:layout_gravity="center" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"
+            android:padding="3dp"
+            android:layout_gravity="right" />
+    </LinearLayout>
     <ImageView
 	    	    android:layout_width="match_parent"
 	    	    android:layout_height="4dp"
@@ -27,13 +43,13 @@
 		<LinearLayout
 		    android:layout_width="match_parent"
 		    android:layout_height="match_parent"
-		    android:orientation="vertical"
-		    android:onClick="onStatusButtonClick"
-		    android:clickable="true" >
+		    android:orientation="vertical" >
 		    <LinearLayout
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
-		        android:orientation="horizontal" >
+		        android:orientation="horizontal"
+		        android:onClick="onStatusButtonClick"
+		    	android:clickable="true" >
 		        <ImageView
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
@@ -59,12 +75,90 @@
 		                android:textColor="@color/lightgrey" />
 		        </LinearLayout>
 		    </LinearLayout>
-	    	<ImageView
+		    	<ImageView
+		    	    android:layout_width="match_parent"
+		    	    android:layout_height="4dp"
+		    	    android:src="@color/grey" />
+			    <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/committees"
+			        android:textSize="@dimen/menu_parent"
+			        android:textColor="@color/white"
+			        android:textStyle="bold" />
+			    <ImageView
+		    	    android:layout_width="match_parent"
+		    	    android:layout_height="4dp"
+		    	    android:src="@color/grey" />
+			    
+	    	<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:onClick="onCodeButtonClick"
+		    	android:clickable="true" >
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:src="@drawable/ic_menu_code" />
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:orientation="vertical" >
+		            <TextView
+		                android:layout_height="wrap_content"
+		                android:layout_width="wrap_content"
+		                android:text="@string/code"
+		                android:textSize="@dimen/menu_titles"
+		                android:textColor="@color/white"/>
+		            <TextView
+		                android:layout_height="wrap_content"
+		                android:layout_width="wrap_content"
+		                android:text="@string/code_menu_text"
+		                android:textSize="@dimen/menu_text"
+		                android:textColor="@color/lightgrey" />
+		        </LinearLayout>
+		    </LinearLayout>
+		    <ImageView
 	    	    android:layout_width="match_parent"
-	    	    android:layout_height="4dp"
+	    	    android:layout_height="2dp"
 	    	    android:src="@color/grey" />
-		    
-	    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:onClick="onBalanceButtonClick"
+		    	android:clickable="true" >
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:src="@android:drawable/ic_menu_always_landscape_portrait"
+		            android:padding="@dimen/splash_padding" />
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:orientation="vertical" >
+		            <TextView
+		                android:layout_height="wrap_content"
+		                android:layout_width="wrap_content"
+		                android:text="@string/balance"
+		                android:textSize="@dimen/menu_titles"
+		                android:textColor="@color/white"/>
+		            <TextView
+		                android:layout_height="wrap_content"
+		                android:layout_width="wrap_content"
+		                android:text="@string/balance_menu_text"
+		                android:textSize="@dimen/menu_text"
+		                android:textColor="@color/lightgrey" />
+		        </LinearLayout>
+		    </LinearLayout>
+	    	
+	    	
+	    	
 		</LinearLayout>
 	</ScrollView>
 </LinearLayout>

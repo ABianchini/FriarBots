@@ -8,6 +8,11 @@
     <string name="frairbots">FrairBots</string>
     <string name="menu">Main Menu</string>
     <string name="status">Current Status</string>
-    <string name="status_menu_text">Tells you the current status of Team 3309\'s robot.</string>
+    <string name="status_menu_text">The current status of Team 3309\'s robot.</string>
+    <string name="committees">Committees</string>
+    <string name="code">Programming</string>
+    <string name="code_menu_text">Programming Committee\'s page including the code and current progress.</string>
+    <string name="balance">Balance</string>
+    <string name="balance_menu_text">Balance Committee\'s page including the current progress and more.</string>
 
 </resources>

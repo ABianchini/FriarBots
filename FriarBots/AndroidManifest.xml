@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.serviterobotics.friarbots"
-    android:versionCode="2"
-    android:versionName="0.1.1" >
+    android:versionCode="3"
+    android:versionName="0.1.2" >
 
     <uses-sdk android:minSdkVersion="10" />
 
     <application
-        android:icon="@drawable/icon"
+        android:icon="@drawable/ic_menu_code"
         android:label="@string/app_name" android:debuggable="true">
         <activity android:name="BotsSplashActivity"
             android:label="@string/app_name">
