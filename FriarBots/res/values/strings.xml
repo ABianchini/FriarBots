@@ -7,5 +7,7 @@
     <string name="team">Team 3309</string>
     <string name="frairbots">FrairBots</string>
     <string name="menu">Main Menu</string>
+    <string name="status">Current Status</string>
+    <string name="status_menu_text">Tells you the current status of Team 3309\'s robot.</string>
 
 </resources>
