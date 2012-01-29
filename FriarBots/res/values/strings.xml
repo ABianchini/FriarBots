@@ -23,6 +23,10 @@
     <string name="website_posts_menu_text">An RSS feed of the Servite Robotics web site\'s posts</string>
     <string name="gallery">Gallery</string>
     <string name="gallery_menu_text">Photos of Servite\'s Robotics Team and what they\'ve done.</string>
+    <string name="scouting">Scouting</string>
+    <string name="scouting_menu_text">Scouting Committee\'s page for inputing and viewing information.</string>
+    <string name="about">About</string>
+    <string name="about_menu_text">About the FriarBot\'s Android Application</string>
 
     
 </resources>

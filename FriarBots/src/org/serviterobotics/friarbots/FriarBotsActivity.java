@@ -28,5 +28,18 @@ public class FriarBotsActivity extends Activity {
     public void onShooterButtonClick(View view) {
     	startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
     }
+    public void onScoutingButtonClick(View view) {
+    	
+    	//startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    }
+    public void onPostsButtonClick(View view) {
+    	//startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    }
+    public void onGalleryButtonClick(View view) {
+    	//startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    }
+    public void onAboutButtonClick(View view) {
+    	//startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    }
     
 }

@@ -52,6 +52,8 @@ public final class R {
     }
     public static final class string {
         public static final int FRC=0x7f070003;
+        public static final int about=0x7f070018;
+        public static final int about_menu_text=0x7f070019;
         public static final int app_name=0x7f070002;
         public static final int balance=0x7f07000c;
         public static final int balance_menu_text=0x7f07000d;
@@ -65,6 +67,8 @@ public final class R {
         public static final int gallery_menu_text=0x7f070015;
         public static final int hello=0x7f070000;
         public static final int menu=0x7f070006;
+        public static final int scouting=0x7f070016;
+        public static final int scouting_menu_text=0x7f070017;
         public static final int shooter=0x7f070010;
         public static final int shooter_menu_text=0x7f070011;
         public static final int status=0x7f070007;
