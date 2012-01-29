@@ -39,5 +39,8 @@ public class FriarBotsActivity extends Activity {
     public void onAboutButtonClick(View view) {
     	startActivity(new Intent(FriarBotsActivity.this, AboutActivity.class));
     }
+    public void onCalendarButtonClick(View view) {
+    	startActivity(new Intent(FriarBotsActivity.this, CalendarActivity.class));
+    }
     
 }

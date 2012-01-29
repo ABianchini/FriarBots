@@ -3,9 +3,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/about" />
-
+        android:text="@string/about"
+        android:gravity="center"
+        android:textSize="@dimen/title_text"
+        android:textColor="@color/white" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/splash_padding"
+        android:text="@string/about_text"
+        android:textSize="@dimen/menu_parent"
+        android:textColor="@color/lightgrey" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_small"
+        android:src="@color/grey" />
+    
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+	        android:onClick="onChangelogButtonClick"
+	    	android:clickable="true" >
+    	    <ImageView
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_gravity="center_vertical"
+    	        android:padding="@dimen/splash_padding"
+    	        android:src="@android:drawable/ic_menu_recent_history" />
+    	    <LinearLayout
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:layout_gravity="left"
+    	        android:orientation="vertical" >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/changelog"
+	                android:textSize="@dimen/menu_titles"
+	                android:textColor="@color/white"
+	                android:textStyle="bold" />
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/changelog_about_text"
+	                android:textSize="@dimen/menu_text"
+	                android:textColor="@color/lightgrey" />
+    	    </LinearLayout>
+    	</LinearLayout>
+	    
+    	<ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/divider_small"
+	        android:src="@color/grey" />
+    
 </LinearLayout>

@@ -1,7 +1,9 @@
 package org.serviterobotics.friarbots;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class AboutActivity extends Activity {
     /** Called when the activity is first created. */
@@ -9,6 +11,9 @@ public class AboutActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
+    }
+    public void onChangelogButtonClick(View view) {
+    	startActivity(new Intent(AboutActivity.this, ChangeLogActivity.class));
     }
     
 }

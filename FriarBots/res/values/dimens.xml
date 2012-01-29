@@ -5,4 +5,6 @@
     <dimen name="menu_parent">15dp</dimen>
     <dimen name="menu_text">12dp</dimen>
     <dimen name="menu_titles">30dp</dimen>
+    <dimen name="divider_small">2dp</dimen>
+    <dimen name="divider_big">6dp</dimen>
 </resources>

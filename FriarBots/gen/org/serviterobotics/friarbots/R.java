@@ -15,17 +15,19 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f050001;
-        public static final int grey=0x7f050002;
-        public static final int lightgrey=0x7f050003;
-        public static final int white=0x7f050000;
+        public static final int black=0x7f060001;
+        public static final int grey=0x7f060002;
+        public static final int lightgrey=0x7f060003;
+        public static final int white=0x7f060000;
     }
     public static final class dimen {
-        public static final int menu_parent=0x7f060002;
-        public static final int menu_text=0x7f060003;
-        public static final int menu_titles=0x7f060004;
-        public static final int splash_padding=0x7f060000;
-        public static final int title_text=0x7f060001;
+        public static final int divider_big=0x7f070006;
+        public static final int divider_small=0x7f070005;
+        public static final int menu_parent=0x7f070002;
+        public static final int menu_text=0x7f070003;
+        public static final int menu_titles=0x7f070004;
+        public static final int splash_padding=0x7f070000;
+        public static final int title_text=0x7f070001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -34,52 +36,65 @@ public final class R {
         public static final int logo_large=0x7f020003;
     }
     public static final class id {
-        public static final int ImageView_SplashLogo=0x7f080001;
-        public static final int LinearLayoutMenu=0x7f080004;
-        public static final int ScrollViewMenu=0x7f080005;
-        public static final int TextView_SplashFRC=0x7f080000;
-        public static final int TextView_TeamName=0x7f080003;
-        public static final int TextView_TeamNum=0x7f080002;
+        public static final int ImageView_SplashLogo=0x7f090001;
+        public static final int LinearLayoutMenu=0x7f090007;
+        public static final int ScrollViewMenu=0x7f090008;
+        public static final int ScrollViewSettings=0x7f090005;
+        public static final int TextView_Change01=0x7f090004;
+        public static final int TextView_ChangeText=0x7f090006;
+        public static final int TextView_SplashFRC=0x7f090000;
+        public static final int TextView_TeamName=0x7f090003;
+        public static final int TextView_TeamNum=0x7f090002;
     }
     public static final class layout {
         public static final int about=0x7f030000;
         public static final int balance=0x7f030001;
         public static final int begin=0x7f030002;
-        public static final int code=0x7f030003;
-        public static final int drivesystems=0x7f030004;
-        public static final int gallery=0x7f030005;
-        public static final int menu=0x7f030006;
-        public static final int posts=0x7f030007;
-        public static final int scout=0x7f030008;
-        public static final int shooter=0x7f030009;
-        public static final int status=0x7f03000a;
+        public static final int calendar=0x7f030003;
+        public static final int change=0x7f030004;
+        public static final int code=0x7f030005;
+        public static final int drivesystems=0x7f030006;
+        public static final int gallery=0x7f030007;
+        public static final int menu=0x7f030008;
+        public static final int posts=0x7f030009;
+        public static final int scout=0x7f03000a;
+        public static final int shooter=0x7f03000b;
+        public static final int status=0x7f03000c;
+    }
+    public static final class raw {
+        public static final int changelog=0x7f050000;
     }
     public static final class string {
-        public static final int FRC=0x7f070003;
-        public static final int about=0x7f070018;
-        public static final int about_menu_text=0x7f070019;
-        public static final int app_name=0x7f070002;
-        public static final int balance=0x7f07000c;
-        public static final int balance_menu_text=0x7f07000d;
-        public static final int code=0x7f07000a;
-        public static final int code_menu_text=0x7f07000b;
-        public static final int committees=0x7f070009;
-        public static final int drive_systems=0x7f07000e;
-        public static final int drive_systems_menu_text=0x7f07000f;
-        public static final int frairbots=0x7f070005;
-        public static final int gallery=0x7f070014;
-        public static final int gallery_menu_text=0x7f070015;
-        public static final int hello=0x7f070000;
-        public static final int menu=0x7f070006;
-        public static final int posts=0x7f070012;
-        public static final int posts_menu_text=0x7f070013;
-        public static final int scouting=0x7f070016;
-        public static final int scouting_menu_text=0x7f070017;
-        public static final int shooter=0x7f070010;
-        public static final int shooter_menu_text=0x7f070011;
-        public static final int status=0x7f070007;
-        public static final int status_menu_text=0x7f070008;
-        public static final int team=0x7f070004;
-        public static final int version_number=0x7f070001;
+        public static final int FRC=0x7f080003;
+        public static final int about=0x7f080018;
+        public static final int about_menu_text=0x7f080019;
+        public static final int about_text=0x7f08001e;
+        public static final int app_name=0x7f080002;
+        public static final int balance=0x7f08000c;
+        public static final int balance_menu_text=0x7f08000d;
+        public static final int calendar=0x7f08001c;
+        public static final int calendar_menu_text=0x7f08001d;
+        public static final int changelog=0x7f08001a;
+        public static final int changelog_about_text=0x7f08001b;
+        public static final int code=0x7f08000a;
+        public static final int code_menu_text=0x7f08000b;
+        public static final int committees=0x7f080009;
+        public static final int drive_systems=0x7f08000e;
+        public static final int drive_systems_menu_text=0x7f08000f;
+        public static final int frairbots=0x7f080005;
+        public static final int gallery=0x7f080014;
+        public static final int gallery_menu_text=0x7f080015;
+        public static final int hello=0x7f080000;
+        public static final int menu=0x7f080006;
+        public static final int posts=0x7f080012;
+        public static final int posts_menu_text=0x7f080013;
+        public static final int scouting=0x7f080016;
+        public static final int scouting_menu_text=0x7f080017;
+        public static final int shooter=0x7f080010;
+        public static final int shooter_menu_text=0x7f080011;
+        public static final int status=0x7f080007;
+        public static final int status_menu_text=0x7f080008;
+        public static final int team=0x7f080004;
+        public static final int version_number=0x7f080001;
     }
 }

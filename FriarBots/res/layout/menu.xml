@@ -31,7 +31,7 @@
     </LinearLayout>
     <ImageView
    	    android:layout_width="match_parent"
-   	    android:layout_height="6dp"
+   	    android:layout_height="@dimen/divider_big"
    	    android:src="@color/grey" />
     
 	<ScrollView 
@@ -92,7 +92,7 @@
 			        android:textStyle="bold" />
 			    <ImageView
 		    	    android:layout_width="match_parent"
-		    	    android:layout_height="6dp"
+		    	    android:layout_height="@dimen/divider_big"
 		    	    android:src="@color/grey" />
 			    
 	    	<LinearLayout
@@ -128,7 +128,7 @@
 		    
 		    <ImageView
 	    	    android:layout_width="match_parent"
-	    	    android:layout_height="2dp"
+	    	    android:layout_height="@dimen/divider_small"
 	    	    android:src="@color/grey" />
 		    
 		    <LinearLayout
@@ -165,7 +165,7 @@
 		    
 		    <ImageView
 	    	    android:layout_width="match_parent"
-	    	    android:layout_height="2dp"
+	    	    android:layout_height="@dimen/divider_small"
 	    	    android:src="@color/grey" />
 		    
 		    <LinearLayout
@@ -202,7 +202,7 @@
 		    
 		    <ImageView
 	    	    android:layout_width="match_parent"
-	    	    android:layout_height="2dp"
+	    	    android:layout_height="@dimen/divider_small"
 	    	    android:src="@color/grey" />
 		    
 		    <LinearLayout
@@ -238,7 +238,7 @@
 		    </LinearLayout>
 		    
 	        <ImageView
-	            android:layout_height="2dp"
+	            android:layout_height="@dimen/divider_small"
 	            android:layout_width="match_parent"
 	            android:src="@color/grey" />
 		        
@@ -277,7 +277,45 @@
 	    	<ImageView
 	    	    android:src="@color/grey"
 	    	    android:layout_width="match_parent"
-	    	    android:layout_height="6dp" />
+	    	    android:layout_height="@dimen/divider_big" />
+	    	
+	    	<LinearLayout
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="horizontal"
+		        android:onClick="onCalendarButtonClick"
+		    	android:clickable="true" >
+	    	    <ImageView
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_gravity="center_vertical"
+	    	        android:padding="@dimen/splash_padding"
+	    	        android:src="@android:drawable/ic_menu_today" />
+	    	    <LinearLayout
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_gravity="left"
+	    	        android:orientation="vertical" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/calendar"
+		                android:textSize="@dimen/menu_titles"
+		                android:textColor="@color/white"
+		                android:textStyle="bold" />
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/calendar_menu_text"
+		                android:textSize="@dimen/menu_text"
+		                android:textColor="@color/lightgrey" />
+	    	    </LinearLayout>
+	    	</LinearLayout>
+	    	
+	    	<ImageView
+	    	    android:src="@color/grey"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="@dimen/divider_big" />
 	    	
 	    	<LinearLayout
 	    	    android:layout_width="match_parent"
@@ -313,7 +351,7 @@
 	    	</LinearLayout>
 	    	
 	    	<ImageView
-	    	    android:layout_height="6dp"
+	    	    android:layout_height="@dimen/divider_big"
 	    	    android:layout_width="match_parent"
 	    	    android:src="@color/grey" />
 	    	
@@ -347,10 +385,6 @@
 		                android:text="@string/gallery_menu_text"
 		                android:textSize="@dimen/menu_text"
 		                android:textColor="@color/lightgrey" />
-		            <ImageView
-	    	    android:layout_width="match_parent"
-	    	    android:layout_height="12dp"
-	    	    android:src="@color/black" />
 	    	    </LinearLayout>
 	    	</LinearLayout>
 	    	

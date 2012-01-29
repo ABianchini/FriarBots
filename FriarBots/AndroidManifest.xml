@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.serviterobotics.friarbots"
     android:versionCode="4"
-    android:versionName="0.1.3" >
+    android:versionName="0.1.4" >
 
     <uses-sdk android:minSdkVersion="10" />
 
@@ -28,6 +28,8 @@
         <activity android:name="GalleryActivity"></activity>
         <activity android:name="PostsActivity"></activity>
         <activity android:name="ScoutingActivity"></activity>
+        <activity android:name="ChangeLogActivity"></activity>
+        <activity android:name="CalendarActivity"></activity>
         
         
     </application>

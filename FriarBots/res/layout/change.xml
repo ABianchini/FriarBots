@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+ 	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+  	android:background="@color/black" >
+	
+	    <TextView
+            android:id="@+id/TextView_Change01"
+            android:layout_height="wrap_content"
+            android:text="@string/changelog"
+            android:textSize="@dimen/title_text"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:shadowColor="@android:color/white"
+            android:textColor="@color/white"></TextView>
+    <ScrollView
+        android:id="@+id/ScrollViewSettings"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true" >
+	    <TextView
+	        android:id="@+id/TextView_ChangeText"
+	        android:textColor="@color/lightgrey"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:autoLink="all"
+	        android:isScrollContainer="true"
+	        android:drawablePadding="3dp"
+	        android:textColorLink="@color/lightgrey"
+	        android:linksClickable="true"
+	        android:fadingEdgeLength="25dp"
+	        android:fadingEdge="vertical"
+	        android:scrollbars="vertical"
+	        android:padding="4dp"
+	        android:textSize="@dimen/menu_parent"
+	        android:scrollbarStyle="outsideOverlay"
+	        android:bufferType="spannable"></TextView>
+    </ScrollView>
+</LinearLayout>
