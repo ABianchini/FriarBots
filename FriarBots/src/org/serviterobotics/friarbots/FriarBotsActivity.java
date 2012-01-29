@@ -1,11 +1,12 @@
 package org.serviterobotics.friarbots;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class FriarBotsActivity extends BotsActivity {
+public class FriarBotsActivity extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -16,19 +17,16 @@ public class FriarBotsActivity extends BotsActivity {
     	startActivity(new Intent(FriarBotsActivity.this, StatusActivity.class));
     }
     public void onCodeButtonClick(View view) {
-    	Toast toast = Toast.makeText(this, "Where\'s the code?", Toast.LENGTH_SHORT);
-    	toast.show();
-    }
-    public void onBalanceButtonClick(View view) {
-    	Toast toast = Toast.makeText(this, "Hop on one foot!", Toast.LENGTH_SHORT);
-    	toast.show();
-    }
-    public void onShooterButtonClick(View view) {
-    	Toast toast = Toast.makeText(this, "Bang!", Toast.LENGTH_SHORT);
-    	toast.show();
+    	startActivity(new Intent(FriarBotsActivity.this, CodeActivity.class));
     }
     public void onDriveSystemsButtonClick(View view) {
-    	Toast toast = Toast.makeText(this, "Drive to Michigan", Toast.LENGTH_SHORT);
-    	toast.show();
+    	startActivity(new Intent(FriarBotsActivity.this, DriveSystemsActivity.class));
     }
+    public void onBalanceButtonClick(View view) {
+    	startActivity(new Intent(FriarBotsActivity.this, BalanceActivity.class));
+    }
+    public void onShooterButtonClick(View view) {
+    	startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    }
+    
 }

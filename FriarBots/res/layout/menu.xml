@@ -46,6 +46,7 @@
 		    android:layout_width="match_parent"
 		    android:layout_height="match_parent"
 		    android:orientation="vertical" >
+		    
 		    <LinearLayout
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
@@ -68,7 +69,8 @@
 		                android:layout_width="wrap_content"
 		                android:text="@string/status"
 		                android:textSize="@dimen/menu_titles"
-		                android:textColor="@color/white"/>
+		                android:textColor="@color/white"
+		                android:textStyle="bold" />
 		            <TextView
 		                android:layout_height="wrap_content"
 		                android:layout_width="wrap_content"
@@ -234,9 +236,90 @@
 		                android:textColor="@color/lightgrey" />
 		        </LinearLayout>
 		    </LinearLayout>
+		    
+	    	<ImageView
+	    	    android:src="@color/grey"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="4dp" />
+	    	
+	    	<LinearLayout
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="horizontal" >
+	    	    <ImageView
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_gravity="center_vertical"
+	    	        android:padding="@dimen/splash_padding"
+	    	        android:src="@android:drawable/ic_menu_my_calendar" />
+	    	    <LinearLayout
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_gravity="left"
+	    	        android:orientation="vertical" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/website_posts"
+		                android:textSize="@dimen/menu_titles"
+		                android:textColor="@color/white"
+		                android:textStyle="bold" />
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/website_posts_menu_text"
+		                android:textSize="@dimen/menu_text"
+		                android:textColor="@color/lightgrey" />
+	    	    </LinearLayout>
+	    	</LinearLayout>
+	    	
+	    	<ImageView
+	    	    android:layout_height="4dp"
+	    	    android:layout_width="match_parent"
+	    	    android:src="@color/grey" />
+	    	
+	    	<LinearLayout
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="horizontal" >
+	    	    <ImageView
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_gravity="center_vertical"
+	    	        android:padding="@dimen/splash_padding"
+	    	        android:src="@android:drawable/ic_menu_gallery" />
+	    	    <LinearLayout
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_gravity="left"
+	    	        android:orientation="vertical" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/gallery"
+		                android:textSize="@dimen/menu_titles"
+		                android:textColor="@color/white"
+		                android:textStyle="bold" />
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/gallery_menu_text"
+		                android:textSize="@dimen/menu_text"
+		                android:textColor="@color/lightgrey" />
+		            <ImageView
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="12dp"
+	    	    android:src="@color/black" />
+	    	    </LinearLayout>
+	    	</LinearLayout>
 	    	
 	    	
 	    	
+	    	
+	    	<ImageView
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="6dp"
+	    	    android:src="@color/black" />
 		</LinearLayout>
 	</ScrollView>
 	<RelativeLayout

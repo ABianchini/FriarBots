@@ -19,5 +19,10 @@
     <string name="drive_systems_menu_text">Drive Systems Committee\'s page including current progress and more.</string>
     <string name="shooter">Shooter</string>
     <string name="shooter_menu_text">Shooter Committee\'s page including current progress and more.</string>
+    <string name="website_posts">Web Site Posts</string>
+    <string name="website_posts_menu_text">An RSS feed of the Servite Robotics web site\'s posts</string>
+    <string name="gallery">Gallery</string>
+    <string name="gallery_menu_text">Photos of Servite\'s Robotics Team and what they\'ve done.</string>
 
+    
 </resources>
