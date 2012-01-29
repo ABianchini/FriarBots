@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class FriarBotsActivity extends Activity {
     /** Called when the activity is first created. */
@@ -29,17 +28,16 @@ public class FriarBotsActivity extends Activity {
     	startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
     }
     public void onScoutingButtonClick(View view) {
-    	
-    	//startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    	startActivity(new Intent(FriarBotsActivity.this, ScoutingActivity.class));
     }
     public void onPostsButtonClick(View view) {
-    	//startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    	startActivity(new Intent(FriarBotsActivity.this, PostsActivity.class));
     }
     public void onGalleryButtonClick(View view) {
-    	//startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    	startActivity(new Intent(FriarBotsActivity.this, GalleryActivity.class));
     }
     public void onAboutButtonClick(View view) {
-    	//startActivity(new Intent(FriarBotsActivity.this, ShooterActivity.class));
+    	startActivity(new Intent(FriarBotsActivity.this, AboutActivity.class));
     }
     
 }

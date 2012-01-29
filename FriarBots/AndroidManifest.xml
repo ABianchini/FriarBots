@@ -24,6 +24,10 @@
         <activity android:name="DriveSystemsActivity"></activity>
         <activity android:name="BalanceActivity"></activity>
         <activity android:name="ShooterActivity"></activity>
+        <activity android:name="AboutActivity"></activity>
+        <activity android:name="GalleryActivity"></activity>
+        <activity android:name="PostsActivity"></activity>
+        <activity android:name="ScoutingActivity"></activity>
         
         
     </application>
