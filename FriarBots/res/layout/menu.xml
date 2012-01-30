@@ -4,9 +4,11 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@color/black" >
+    <!-- USE A RELATIVE LAYOUT HERE!!! -->
     <LinearLayout
         android:id="@+id/LinearLayoutMenu"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
         <ImageView
@@ -19,7 +21,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="@string/menu"
-	        android:textSize="@dimen/title_text"
+	        android:textSize="40dp"
 	        android:textColor="@color/white"
 	        android:layout_gravity="center" />
         <ImageView
