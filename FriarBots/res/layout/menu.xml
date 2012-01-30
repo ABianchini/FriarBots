@@ -4,8 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@color/black" >
-    <!-- USE A RELATIVE LAYOUT HERE!!! -->
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/LinearLayoutMenu"
         android:layout_width="wrap_content"
         android:gravity="center"
@@ -16,7 +15,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/icon"
             android:padding="3dp"
-            android:layout_gravity="left" />
+            android:layout_alignParentLeft="true" />
         <TextView
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
@@ -29,8 +28,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/icon"
             android:padding="3dp"
-            android:layout_gravity="right" />
-    </LinearLayout>
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
     <ImageView
    	    android:layout_width="match_parent"
    	    android:layout_height="@dimen/divider_big"
@@ -89,7 +88,7 @@
 			        android:layout_width="match_parent"
 			        android:layout_height="wrap_content"
 			        android:text="@string/committees"
-			        android:textSize="@dimen/menu_parent"
+			        android:textSize="@dimen/regular_text"
 			        android:textColor="@color/white"
 			        android:textStyle="bold" />
 			    <ImageView
@@ -415,7 +414,7 @@
 		            <TextView
 		                android:layout_width="wrap_content"
 		                android:layout_height="wrap_content"
-		                android:text="@string/about"
+		                android:text="@string/about_settings"
 		                android:textSize="@dimen/menu_titles"
 		                android:textColor="@color/white"
 		                android:textStyle="bold" />

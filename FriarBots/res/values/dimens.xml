@@ -2,7 +2,7 @@
 <resources>
     <dimen name="splash_padding">6dp</dimen>
     <dimen name="title_text">50dp</dimen>
-    <dimen name="menu_parent">15dp</dimen>
+    <dimen name="regular_text">15dp</dimen>
     <dimen name="menu_text">12dp</dimen>
     <dimen name="menu_titles">30dp</dimen>
     <dimen name="divider_small">2dp</dimen>

@@ -25,13 +25,21 @@
     <string name="gallery_menu_text">Photos of Servite\'s Robotics Team and what they\'ve done.</string>
     <string name="scouting">Scouting</string>
     <string name="scouting_menu_text">Scouting Committee\'s page for inputing and viewing information.</string>
+    <string name="about_settings">About/Settings</string>
     <string name="about">About</string>
-    <string name="about_menu_text">About the FriarBot\'s Android Application</string>
+    <string name="settings">Settings</string>
+    <string name="about_menu_text">About the FriarBot\'s Android Application and some settings</string>
 	<string name="changelog">Changelog</string>
 	<string name="changelog_about_text">An accurate keeping of the changes of this application and their corresponding version numbers.</string>
 	<string name="calendar">Calendar</string>
 	<string name="calendar_menu_text">An great place to keep track of the upcoming events.</string>
+	<string name="checkbox_update">Manual Updates</string>
 	
     
+	<string name="bumper">Bumper</string>
+	<string name="ramp">Ramp</string>
+	<string name="off_def">Offense/Defense</string>
+	<string name="off">Offense</string>
+	<string name="def">Defense</string>
     <string name="about_text">The FriarBots application was made to simplify and unify all the team\'s information in one easy place. From Scouting information to weekly updates accessible for the whole team. We also made this application for parents, who want an easy way to follow what their sons and daughters are doing in the world of robotics.</string>
 </resources>

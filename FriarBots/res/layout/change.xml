@@ -35,7 +35,7 @@
 	        android:fadingEdge="vertical"
 	        android:scrollbars="vertical"
 	        android:padding="4dp"
-	        android:textSize="@dimen/menu_parent"
+	        android:textSize="@dimen/regular_text"
 	        android:scrollbarStyle="outsideOverlay"
 	        android:bufferType="spannable"></TextView>
     </ScrollView>

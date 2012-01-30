@@ -3,9 +3,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    <!-- TODO Tabs for Input and Output of information -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/scouting" />
+        android:text="@string/scouting"
+        android:gravity="center"
+        android:textSize="@dimen/title_text"
+        android:textColor="@color/white" />
+    <ImageView
+        android:layout_height="@dimen/divider_big"
+        android:layout_width="match_parent"
+        android:src="@color/grey"
+        android:padding="@dimen/divider_small" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/off_def"
+        android:textColor="@color/lightgrey"
+        android:textSize="@dimen/regular_text" />
+    <Spinner
+        android:entries="@array/off_def"
+        android:id="@+id/Spinner_Off_Def"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- TODO get more information to collect -->
+    
+    
+    
 
 </LinearLayout>

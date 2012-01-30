@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="off_def">
+        <item>@string/off</item>
+        <item>@string/def</item>
+    </string-array>
+    
+    <string-array name="cross_method">
+        <item>@string/bumper</item>
+        <item>@string/ramp</item>
+    </string-array>
+    
+</resources>

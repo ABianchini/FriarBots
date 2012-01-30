@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/splash_padding"
         android:text="@string/about_text"
-        android:textSize="@dimen/menu_parent"
+        android:textSize="@dimen/regular_text"
         android:textColor="@color/lightgrey" />
     <ImageView
         android:layout_width="match_parent"
@@ -59,7 +59,32 @@
 	    
     	<ImageView
 	        android:layout_width="match_parent"
-	        android:layout_height="@dimen/divider_small"
+	        android:layout_height="@dimen/divider_big"
 	        android:src="@color/grey" />
-    
+    	
+    	<TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/settings"
+	        android:gravity="center"
+	        android:textSize="@dimen/title_text"
+	        android:textColor="@color/white" />
+    	<ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/divider_big"
+	        android:src="@color/grey" />
+
+    	<LinearLayout
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="match_parent"
+    	    android:orientation="horizontal" >
+    	    <CheckBox
+	    	    android:id="@+id/Checkbox_Update"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="@string/checkbox_update" />
+    	    
+    	</LinearLayout>
+    	
+    	
 </LinearLayout>
