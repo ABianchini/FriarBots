@@ -79,11 +79,17 @@
     	    android:layout_width="match_parent"
     	    android:orientation="horizontal" >
     	    <CheckBox
-	    	    android:id="@+id/Checkbox_Update"
+	    	    android:id="@+id/Checkbox_ManUpdate"
 	    	    android:layout_width="wrap_content"
 	    	    android:layout_height="wrap_content"
 	    	    android:text="@string/checkbox_update" />
-    	    
+    	    <ImageView
+    	        android:clickable="true"
+    	        android:paddingTop="8dp"
+    	        android:onClick="onUpdateHelpClick"
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:src="@android:drawable/ic_menu_help" />
     	</LinearLayout>
     	
     	

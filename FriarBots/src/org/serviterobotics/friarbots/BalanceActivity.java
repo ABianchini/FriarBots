@@ -1,9 +1,8 @@
 package org.serviterobotics.friarbots;
 
-import android.app.Activity;
 import android.os.Bundle;
 
-public class BalanceActivity extends Activity {
+public class BalanceActivity extends BotsActivity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {

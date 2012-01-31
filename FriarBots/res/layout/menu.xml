@@ -11,29 +11,30 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
         <ImageView
+            android:id="@+id/Image_FBIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon"
             android:padding="3dp"
-            android:layout_alignParentLeft="true" />
+	        android:layout_gravity="right|center_vertical"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true" />
         <TextView
+            android:id="@+id/TextView_MenuTitle"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="@string/menu"
 	        android:textSize="40dp"
 	        android:textColor="@color/white"
-	        android:layout_gravity="center" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icon"
-            android:padding="3dp"
-            android:layout_alignParentRight="true" />
+            android:layout_toRightOf="@+id/Image_FBIcon"
+            android:layout_alignParentTop="true"
+            android:shadowRadius="10"
+            android:shadowColor="@color/white" />
     </RelativeLayout>
     <ImageView
    	    android:layout_width="match_parent"
    	    android:layout_height="@dimen/divider_big"
-   	    android:src="@color/grey" />
+   	    android:src="@color/black" />
     
 	<ScrollView 
 	    android:layout_below="@+id/LinearLayoutMenu"

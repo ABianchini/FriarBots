@@ -8,6 +8,7 @@
     <string-array name="cross_method">
         <item>@string/bumper</item>
         <item>@string/ramp</item>
+        <item>@string/both</item>
     </string-array>
     
 </resources>

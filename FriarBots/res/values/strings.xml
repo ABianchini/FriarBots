@@ -34,6 +34,8 @@
 	<string name="calendar">Calendar</string>
 	<string name="calendar_menu_text">An great place to keep track of the upcoming events.</string>
 	<string name="checkbox_update">Manual Updates</string>
+	<string name="both">Both</string>
+	
 	
     
 	<string name="bumper">Bumper</string>
@@ -41,5 +43,6 @@
 	<string name="off_def">Offense/Defense</string>
 	<string name="off">Offense</string>
 	<string name="def">Defense</string>
+	<string name="update_help">Every time you enter the Calendar, any Committee section, Current Status, Web Site Posts, and Gallery sections of this application, the app checks the interwebs for an update then updates the information. If you do not want it to do this please check the application; then to recieve an update go into the menu and select "Manual Update".</string>
     <string name="about_text">The FriarBots application was made to simplify and unify all the team\'s information in one easy place. From Scouting information to weekly updates accessible for the whole team. We also made this application for parents, who want an easy way to follow what their sons and daughters are doing in the world of robotics.</string>
 </resources>

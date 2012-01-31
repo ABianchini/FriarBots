@@ -1,6 +1,5 @@
 package org.serviterobotics.friarbots;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,7 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class BotsSplashActivity extends Activity {
+public class BotsSplashActivity extends BotsActivity {
     /** Called when the activity is first created. */
 	public static final String FIRST_BOOT = "boot";
     
@@ -18,9 +17,9 @@ public class BotsSplashActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.begin);
-        SharedPreferences preferences = getSharedPreferences(FIRST_BOOT, MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        if (preferences.getBoolean(FIRST_BOOT, true)) {
+        SharedPreferences bootPref = getSharedPreferences(FIRST_BOOT, MODE_PRIVATE);
+        SharedPreferences.Editor editor = bootPref.edit();
+        if (bootPref.getBoolean(FIRST_BOOT, true)) {
         	Animate();
         	editor.putBoolean("boot", false);
             editor.commit();
