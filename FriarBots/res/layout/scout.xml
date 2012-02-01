@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <!-- TODO Tabs for Input and Output of information -->
+    <!-- TODO Fragments for Input and Output of information -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -11,38 +11,24 @@
         android:gravity="center"
         android:textSize="@dimen/title_text"
         android:textColor="@color/white" />
-    <TabHost
-        android:id="@+id/TabHost1"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent" >
-        <LinearLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:orientation="vertical" >
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent" />
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+    
 
-			    <TextView
-			        android:layout_width="match_parent"
-			        android:layout_height="wrap_content"
-			        android:text="@string/off_def"
-			        android:textColor="@color/lightgrey"
-			        android:textSize="@dimen/regular_text" />
-			    <Spinner
-			        android:entries="@array/off_def"
-			        android:id="@+id/Spinner_Off_Def"
-			        android:layout_width="match_parent"
-			        android:layout_height="wrap_content" />
-			    <!-- TODO get more information to collect -->
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/off_def"
+		        android:textColor="@color/lightgrey"
+		        android:textSize="@dimen/regular_text" />
+		    <Spinner
+		        android:entries="@array/off_def"
+		        android:id="@+id/Spinner_Off_Def"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" />
+		    <!-- TODO get more information to collect -->
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/TextView_OffDefCheck" />
     
     
-    
-	</LinearLayout>
-	</TabHost>
 </LinearLayout>

@@ -6,7 +6,13 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 
 public class BotsActivity extends Activity {
+	public static final String SCOUT_DATA = "scoutData";
+	
 	public static final String MANUAL_UPDATES = "manUp";
+	public static final String SCOUT_DATA_OFF_DEF = "off_def";
+	
+	public String offDefHTML = "Not set yet.";
+	public String crossMethodHTML;
 	
 	public void popIt(int title, int msg){
         new AlertDialog.Builder(this)

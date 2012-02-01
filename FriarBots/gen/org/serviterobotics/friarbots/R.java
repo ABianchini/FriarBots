@@ -46,11 +46,11 @@ public final class R {
         public static final int LinearLayoutMenu=0x7f0b0008;
         public static final int ScrollViewMenu=0x7f0b000b;
         public static final int ScrollViewSettings=0x7f0b0006;
-        public static final int Spinner_Off_Def=0x7f0b000d;
-        public static final int TabHost1=0x7f0b000c;
+        public static final int Spinner_Off_Def=0x7f0b000c;
         public static final int TextView_Change01=0x7f0b0005;
         public static final int TextView_ChangeText=0x7f0b0007;
         public static final int TextView_MenuTitle=0x7f0b000a;
+        public static final int TextView_OffDefCheck=0x7f0b000d;
         public static final int TextView_SplashFRC=0x7f0b0001;
         public static final int TextView_TeamName=0x7f0b0004;
         public static final int TextView_TeamNum=0x7f0b0003;
