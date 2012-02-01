@@ -7,8 +7,16 @@
     
     <string-array name="cross_method">
         <item>@string/bumper</item>
-        <item>@string/ramp</item>
+        <item>@string/bridge</item>
         <item>@string/both</item>
+        <item>@string/neither</item>
+    </string-array>
+    
+    <string-array name="number_balance">
+        <item>@string/zero</item>
+        <item>@string/one</item>
+        <item>@string/two</item>
+        <item>@string/cant</item>
     </string-array>
     
 </resources>

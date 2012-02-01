@@ -11,8 +11,11 @@ public class BotsActivity extends Activity {
 	public static final String MANUAL_UPDATES = "manUp";
 	public static final String SCOUT_DATA_OFF_DEF = "off_def";
 	
-	public String offDefHTML = "Not set yet.";
-	public String crossMethodHTML;
+	public String teamNumberJSON;
+	public String offDefJSON;
+	public String crossMethodJSON;
+	public String otherNotesJSON;
+	public String numBalanceJSON;
 	
 	public void popIt(int title, int msg){
         new AlertDialog.Builder(this)

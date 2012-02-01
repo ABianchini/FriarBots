@@ -415,7 +415,7 @@
 		            <TextView
 		                android:layout_width="wrap_content"
 		                android:layout_height="wrap_content"
-		                android:text="@string/about_settings"
+		                android:text="@string/about"
 		                android:textSize="@dimen/menu_titles"
 		                android:textColor="@color/white"
 		                android:textStyle="bold" />
