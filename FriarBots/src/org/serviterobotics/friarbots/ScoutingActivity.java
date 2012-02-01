@@ -1,15 +1,23 @@
 package org.serviterobotics.friarbots;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.RatingBar;
+import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class ScoutingActivity extends BotsActivity {
 	SharedPreferences scoutingData;
@@ -27,7 +35,34 @@ public class ScoutingActivity extends BotsActivity {
         initTeamNumEdit();
         initOtherNotesEdit();
         initHowManyBalanceSpinner();
+        initBalanceRanking();
         
+    }
+    
+    /*private void onUploadButtonClick(View view) {
+    	writeJSON();
+    }*/
+    
+    private void initBalanceRanking() {
+    	final RatingBar ratingbar = (RatingBar) findViewById(R.id.RatingBar_Balance);
+    	ratingbar.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
+    	    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+    	        balanceRankJSON = String.valueOf(rating);
+    	    }
+    	});
+    }
+    
+    private void writeJSON() {
+    	JSONObject object = new JSONObject();
+    	try {
+    		object.put("Team Number", new String(teamNumberJSON));
+    	} catch (JSONException e) {
+    		e.printStackTrace();
+    	}
+    	//TextView scoutTest = (TextView) findViewById(R.id.TextView_ScoutTest);
+    	//scoutTest.setText(object);
+    	Log.d("test","Maybe this JSON worked"+object);
+    	//System.out.println(object);
     }
     
     private void initTeamNumEdit() {

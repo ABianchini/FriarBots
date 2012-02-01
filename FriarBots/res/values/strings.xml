@@ -37,6 +37,9 @@
 	
 	
     
+	    
+    <string name="upload">Upload</string>
+	<string name="balance_rank">Please rank your ability to Balance (Down to the .5 star)\:</string>
 	<string name="cross_method">Field Crossing Method\:</string>
 	<string name="scout_team_number">Team Number\:</string>
 	<string name="how_many_balance">How many OTHER robots can balance alongside your robot?</string>

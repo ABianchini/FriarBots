@@ -16,6 +16,7 @@ public class BotsActivity extends Activity {
 	public String crossMethodJSON;
 	public String otherNotesJSON;
 	public String numBalanceJSON;
+	public String balanceRankJSON;
 	
 	public void popIt(int title, int msg){
         new AlertDialog.Builder(this)
