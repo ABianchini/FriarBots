@@ -112,7 +112,7 @@
 		    <ImageView
 		        android:layout_height="@dimen/divider_big"
 		        android:layout_width="match_parent"
-		        android:src="@color/grey" />
+		        android:src="@color/black" />
 		    
 		    <TextView
 		        android:textColor="@color/lightgrey"

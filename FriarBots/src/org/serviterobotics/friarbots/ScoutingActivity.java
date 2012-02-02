@@ -1,22 +1,13 @@
 package org.serviterobotics.friarbots;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -24,7 +15,7 @@ import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.Spinner;
-import android.widget.TextView;
+import android.widget.Toast;
 
 public class ScoutingActivity extends BotsActivity {
 	SharedPreferences scoutingData;
@@ -46,8 +37,9 @@ public class ScoutingActivity extends BotsActivity {
         
     }
     
-    private void onUploadButtonClick(View view) {
+    public void onUploadButtonClick(View view) {
     	writeJSON();
+    	Toast.makeText(this, "Not Uploaded", Toast.LENGTH_SHORT).show();
     }
     
     private void initBalanceRanking() {
@@ -66,9 +58,8 @@ public class ScoutingActivity extends BotsActivity {
     	} catch (JSONException e) {
     		e.printStackTrace();
     	}
-    	//TextView scoutTest = (TextView) findViewById(R.id.TextView_ScoutTest);
-    	//scoutTest.setText(object);
-    	HttpPost post = new HttpPost("TODO"); //TODO enter url
+    	System.out.println(object);
+    	/*HttpPost post = new HttpPost("TODO"); //TODO enter url
     	try {
     		post.setHeader("Content-type", "application/json");
     		post.setHeader("Accept", "application/json");
@@ -76,7 +67,7 @@ public class ScoutingActivity extends BotsActivity {
 			new DefaultHttpClient().execute(post);
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}*/
     }
     
     private void initTeamNumEdit() {
