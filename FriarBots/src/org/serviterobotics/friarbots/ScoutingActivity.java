@@ -36,6 +36,7 @@ public class ScoutingActivity extends BotsActivity {
         initBalanceRanking();
         initBalanceOrderSpinner();
         initPlayedWith();
+        initOppBalanceExist();
         
     }
     
@@ -206,6 +207,24 @@ public class ScoutingActivity extends BotsActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
             }
         });
+    }
+    
+    private void initOppBalanceExist() {
+    	final Spinner spinner = (Spinner) findViewById(R.id.Spinner_OppBalanceExist);
+    	ArrayAdapter<?> adapter = ArrayAdapter.createFromResource(this,
+				R.array.yes_no, android.R.layout.simple_spinner_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner.setAdapter(adapter);
+		spinner.setSelection(0);
+		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			public void onItemSelected(AdapterView<?> parent,View itemSelected, int selectedItemPosition, long selectedId) {
+				if (selectedItemPosition == 0) oppBalanceExistJSON = "Yes";
+				if (selectedItemPosition == 1) oppBalanceExistJSON = "No";
+			}
+
+			public void onNothingSelected(AdapterView<?> parent) {
+			}
+		});
     }
     
 }

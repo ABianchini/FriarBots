@@ -34,14 +34,13 @@
 	<string name="checkbox_update">Manual Updates</string>
 	<string name="both">Both</string>
 	<string name="neither">Neither</string>
-	
+	<string name="opponent_questions">Opponent Questions</string>
 	
     
 	    
 	<string name="balance_order">In what ORDER will you board the balance bridge?</string>
-	<string name="opponent_balance_exist">OPPONENT: Will you board the balance bridge?</string>
-	<string name="opponent_balance_rank">OPPONENT: Rank your ability to balance (Down to the .5 star)\:</string>
-	<string name="opponent_balance_order">OPPONENT: In what order will you board the balance bridge?</string>
+	<string name="opponent_balance_exist">OPPONENT: Will you board the Coopertition balance bridge?</string>
+	<string name="opponent_balance_order">OPPONENT: In what order will you board the Coopertition balance bridge?</string>
 	<string name="played_with">How many times have you played with/against this team?</string>
 	<string name="first">First</string>
 	<string name="second">Second</string>
@@ -62,7 +61,10 @@
 	<string name="four">4</string>
 	<string name="five">5</string>
 	<string name="six">6</string>
-	<string name="zero">Only by ourselves</string>
+	<string name="zero">0</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="zero_alone">Only by ourselves</string>
 	<string name="cant">We can\'t balance</string>
 	<string name="other_notes">Other Notes\:</string>
 	<string name="update_help">Every time you enter the Calendar, any Committee section, Current Status, Web Site Posts, and Gallery sections of this application, the app checks the interwebs for an update then updates the information. If you do not want it to do this please check the application; then to recieve an update go into the menu and select "Manual Update".</string>

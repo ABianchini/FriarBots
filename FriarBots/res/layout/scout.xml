@@ -14,11 +14,8 @@
     <ImageView
         android:src="@color/grey"
         android:layout_height="@dimen/divider_big"
-        android:layout_width="match_parent" />
-    <ImageView
-        android:src="@color/black"
-        android:layout_height="@dimen/divider_big"
-        android:layout_width="match_parent" />
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/divider_big" />
     <ScrollView
         android:layout_height="wrap_content"
         android:layout_width="match_parent" >
@@ -26,11 +23,6 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="vertical" >
-    
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:id="@+id/TextView_ScoutTest" />
 		    
 			<TextView
 			    android:text="@string/scout_team_number"
@@ -44,16 +36,8 @@
 			    android:layout_width="match_parent"
 			    android:maxLength="4"
 			    android:maxLines="1"
-			    android:inputType="number" />
-			<ImageView
-		        android:src="@color/black"
-		        android:layout_height="@dimen/divider_big"
-		        android:layout_width="match_parent" />
-			
-			<TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:id="@+id/TextView_ScoutTest" />
+			    android:inputType="number"
+			    android:paddingBottom="@dimen/divider_big" />
 		    
 			<TextView
 			    android:text="@string/played_with"
@@ -65,11 +49,8 @@
 			    android:id="@+id/Spinner_PlayedWith"
 			    android:layout_width="200dp"
 			    android:layout_height="wrap_content"
-			    android:entries="@array/num_played_with" />
-			<ImageView
-		        android:src="@color/black"
-		        android:layout_height="@dimen/divider_big"
-		        android:layout_width="match_parent" />
+			    android:entries="@array/num_played_with"
+			    android:paddingBottom="@dimen/divider_big" />
 		
 		    <TextView
 		        android:layout_width="match_parent"
@@ -81,11 +62,8 @@
 		        android:id="@+id/Spinner_Off_Def"
 		        android:layout_width="200dp"
 		        android:layout_height="wrap_content"
-		        android:entries="@array/off_def" />
-		    <ImageView
-		        android:src="@color/black"
-		        android:layout_height="@dimen/divider_big"
-		        android:layout_width="match_parent" />
+		        android:entries="@array/off_def"
+		        android:paddingBottom="@dimen/divider_big" />
 		    
 		    <TextView 
 		        android:layout_width="match_parent"
@@ -97,11 +75,8 @@
 		        android:entries="@array/cross_method"
 		        android:id="@+id/Spinner_CrossMethod"
 		        android:layout_width="200dp"
-		        android:layout_height="wrap_content" />
-		    <ImageView
-		        android:src="@color/black"
-		        android:layout_height="@dimen/divider_big"
-		        android:layout_width="match_parent" />
+		        android:layout_height="wrap_content"
+		        android:paddingBottom="@dimen/divider_big" />
 		    
 		    <TextView
 		        android:layout_width="match_parent"
@@ -113,11 +88,8 @@
 		        android:id="@+id/Spinner_HowManyBalance"
 		        android:layout_width="200dp"
 		        android:layout_height="wrap_content"
-		        android:entries="@array/number_balance" />
-		    <ImageView
-		        android:src="@color/black"
-		        android:layout_height="@dimen/divider_big"
-		        android:layout_width="match_parent" />
+		        android:entries="@array/number_balance"
+		        android:paddingBottom="@dimen/divider_big" />
 		    
 		    <TextView
 		        android:textColor="@color/lightgrey"
@@ -129,11 +101,8 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:id="@+id/RatingBar_Balance"
-		        android:numStars="5" />
-		    <ImageView
-		        android:layout_height="@dimen/divider_big"
-		        android:layout_width="match_parent"
-		        android:src="@color/black" />
+		        android:numStars="5"
+		        android:paddingBottom="@dimen/divider_big" />
 		    
 		    <TextView
 		        android:textColor="@color/lightgrey"
@@ -145,16 +114,9 @@
 		        android:id="@+id/Spinner_BalanceOrder"
 		        android:layout_width="200dp"
 		        android:layout_height="wrap_content"
-		        android:entries="@array/balance_order" />
-		    <ImageView
-		        android:layout_height="@dimen/divider_big"
-		        android:layout_width="match_parent"
-		        android:src="@color/black" />
-		        
-		    
-		    
-		    
-		    
+		        android:entries="@array/balance_order"
+		        android:paddingBottom="@dimen/divider_big" />
+		     
 		    <TextView
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
@@ -166,12 +128,42 @@
 		        android:layout_height="wrap_content"
 		        android:layout_width="match_parent"
 		        android:maxLines="4"
-		        android:inputType="text" />
+		        android:inputType="text"
+		        android:paddingBottom="@dimen/divider_big" />
+		    <ImageView 
+		        android:layout_height="@dimen/divider_big"
+		        android:layout_width="match_parent"
+		        android:src="@color/grey" />
+		    <TextView
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:text="@string/opponent_questions"
+		        android:textSize="@dimen/regular_text"
+		        android:textColor="@color/white"
+		        android:paddingBottom="@dimen/divider_big" />
+		    
+		    <TextView
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:text="@string/opponent_balance_exist"
+		        android:textSize="@dimen/regular_text"
+		        android:textColor="@color/lightgrey" />
+		    <Spinner
+		        android:layout_height="wrap_content"
+		        android:layout_width="200dp"
+		        android:id="@+id/Spinner_OppBalanceExist"
+		        android:entries="@array/yes_no" />
+		    
+		    
+		    
+		    
+		    
+		    
 		    <Button
 		        android:onClick="onUploadButtonClick"
 		        android:text="@string/upload"
 		        android:layout_height="wrap_content"
-		        android:layout_width="wrap_content" />
+		        android:layout_width="wrap_content" /> 
 	    <!-- TODO get more information to collect -->
     
     	</LinearLayout>

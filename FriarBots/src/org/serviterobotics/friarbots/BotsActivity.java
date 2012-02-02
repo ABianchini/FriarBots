@@ -19,6 +19,7 @@ public class BotsActivity extends Activity {
 	public String numBalanceJSON;
 	public String balanceRankJSON;
 	public String balanceOrderJSON;
+	public String oppBalanceExistJSON;
 	
 	
 	public void popIt(int title, int msg){
