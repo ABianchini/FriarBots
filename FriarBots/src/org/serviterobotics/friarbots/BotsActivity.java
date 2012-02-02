@@ -31,5 +31,10 @@ public class BotsActivity extends Activity {
         }).show();
     }
 	
+	public String readTeamInfoJSON() {
+		String builder = "build";
+		return builder;
+	}
+	
 }
 

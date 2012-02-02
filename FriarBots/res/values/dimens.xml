@@ -7,4 +7,5 @@
     <dimen name="menu_titles">30dp</dimen>
     <dimen name="divider_small">2dp</dimen>
     <dimen name="divider_big">6dp</dimen>
+    <dimen name="scout_pad">8dp</dimen>
 </resources>

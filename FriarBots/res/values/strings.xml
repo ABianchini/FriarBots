@@ -36,10 +36,11 @@
 	<string name="neither">Neither</string>
 	<string name="opponent_questions">Opponent Questions</string>
 	<string name="team_info">Team Information</string>
+	<string name="wont">We won\'t on this bridge</string>
 	
     
 	    
-	<string name="balance_order">In what ORDER will you board the balance bridge?</string>
+	<string name="balance_order">In what ORDER will you board our team\'s balance bridge?</string>
 	<string name="opponent_balance_exist">OPPONENT: Will you board the Coopertition balance bridge?</string>
 	<string name="opponent_balance_order">OPPONENT: In what order will you board the Coopertition balance bridge?</string>
 	<string name="played_with">How many times have you played with/against this team?</string>

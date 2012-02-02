@@ -24,6 +24,7 @@
         <item>@string/second</item>
         <item>@string/third</item>
         <item>@string/cant</item>
+        <item>@string/wont</item>
     </string-array>
     
     <string-array name="num_played_with">
@@ -39,6 +40,12 @@
     <string-array name="yes_no">
         <item>@string/yes</item>
         <item>@string/no</item>
+    </string-array>
+    
+    <string-array name="opp_balance_order">
+        <item>@string/first</item>
+        <item>@string/second</item>
+        <item>@string/wont</item>
     </string-array>
     
 </resources>
