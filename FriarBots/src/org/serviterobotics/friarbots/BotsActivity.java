@@ -12,11 +12,14 @@ public class BotsActivity extends Activity {
 	public static final String SCOUT_DATA_OFF_DEF = "off_def";
 	
 	public String teamNumberJSON;
+	public String numPlayedWithJSON;
 	public String offDefJSON;
 	public String crossMethodJSON;
 	public String otherNotesJSON;
 	public String numBalanceJSON;
 	public String balanceRankJSON;
+	public String balanceOrderJSON;
+	
 	
 	public void popIt(int title, int msg){
         new AlertDialog.Builder(this)

@@ -2,7 +2,7 @@
 <resources>
 
     <string name="hello">Hello World, FriarBotsActivity!</string>
-    <string name="version_number">Version 0.2.1</string>
+    <string name="version_number">Version 0.2.5</string>
     <string name="app_name">FriarBots</string>
     <string name="team">Team 3309\nFriarBots</string>
     <string name="menu">Main Menu</string>
@@ -38,10 +38,11 @@
 	
     
 	    
-	<string name="balance_order">In what order will you board the balance bridge?</string>
+	<string name="balance_order">In what ORDER will you board the balance bridge?</string>
 	<string name="opponent_balance_exist">OPPONENT: Will you board the balance bridge?</string>
 	<string name="opponent_balance_rank">OPPONENT: Rank your ability to balance (Down to the .5 star)\:</string>
 	<string name="opponent_balance_order">OPPONENT: In what order will you board the balance bridge?</string>
+	<string name="played_with">How many times have you played with/against this team?</string>
 	<string name="first">First</string>
 	<string name="second">Second</string>
 	<string name="third">Third</string>
@@ -57,6 +58,10 @@
 	<string name="def">Defense</string>
 	<string name="one">1</string>
 	<string name="two">2</string>
+	<string name="three">3</string>
+	<string name="four">4</string>
+	<string name="five">5</string>
+	<string name="six">6</string>
 	<string name="zero">Only by ourselves</string>
 	<string name="cant">We can\'t balance</string>
 	<string name="other_notes">Other Notes\:</string>

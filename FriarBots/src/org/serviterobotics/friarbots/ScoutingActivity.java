@@ -21,7 +21,7 @@ public class ScoutingActivity extends BotsActivity {
 	SharedPreferences scoutingData;
 	
 	
-	//TODO pull (and parse) and push (and write) php data
+	//TODO pull and parse JSON
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,8 @@ public class ScoutingActivity extends BotsActivity {
         initOtherNotesEdit();
         initHowManyBalanceSpinner();
         initBalanceRanking();
+        initBalanceOrderSpinner();
+        initPlayedWith();
         
     }
     
@@ -54,7 +56,12 @@ public class ScoutingActivity extends BotsActivity {
     private void writeJSON() {
     	JSONObject object = new JSONObject();
     	try {
-    		object.put("Team Number", new String(teamNumberJSON));
+    		object.put("teamNumber", new String(teamNumberJSON));
+    		object.put("ROE", new String(offDefJSON));
+    		object.put("crossMethod", new String(crossMethodJSON));
+    		object.put("numRobotsBalanceWith", new String(numBalanceJSON));
+    		object.put("balanceRank", new String(balanceRankJSON));
+    		object.put("otherNotes", new String(otherNotesJSON));
     	} catch (JSONException e) {
     		e.printStackTrace();
     	}
@@ -83,6 +90,29 @@ public class ScoutingActivity extends BotsActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
             }
         });
+    }
+    
+    private void initPlayedWith() {
+    	final Spinner spinner = (Spinner) findViewById(R.id.Spinner_PlayedWith);
+    	ArrayAdapter<?> adapter = ArrayAdapter.createFromResource(this,
+				R.array.num_played_with, android.R.layout.simple_spinner_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner.setAdapter(adapter);
+		spinner.setSelection(0);
+		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			public void onItemSelected(AdapterView<?> parent,View itemSelected, int selectedItemPosition, long selectedId) {
+				if (selectedItemPosition == 0) numPlayedWithJSON = "0";
+				if (selectedItemPosition == 1) numPlayedWithJSON = "1";
+				if (selectedItemPosition == 2) numPlayedWithJSON = "2";
+				if (selectedItemPosition == 3) numPlayedWithJSON = "3";
+				if (selectedItemPosition == 4) numPlayedWithJSON = "4";
+				if (selectedItemPosition == 5) numPlayedWithJSON = "5";
+				if (selectedItemPosition == 6) numPlayedWithJSON = "6";
+			}
+
+			public void onNothingSelected(AdapterView<?> parent) {
+			}
+		});
     }
     
     private void initOffDefSpinner() {
@@ -136,6 +166,26 @@ public class ScoutingActivity extends BotsActivity {
 				if (selectedItemPosition == 1) numBalanceJSON = "1";
 				if (selectedItemPosition == 2) numBalanceJSON = "2";
 				if (selectedItemPosition == 3) numBalanceJSON = "We cant balance";
+			}
+
+			public void onNothingSelected(AdapterView<?> parent) {
+			}
+		});
+    }
+    
+    private void initBalanceOrderSpinner() {
+    	final Spinner spinner = (Spinner) findViewById(R.id.Spinner_BalanceOrder);
+    	ArrayAdapter<?> adapter = ArrayAdapter.createFromResource(this,
+				R.array.balance_order, android.R.layout.simple_spinner_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner.setAdapter(adapter);
+		spinner.setSelection(0);
+		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			public void onItemSelected(AdapterView<?> parent,View itemSelected, int selectedItemPosition, long selectedId) {
+				if (selectedItemPosition == 0) balanceOrderJSON = "First";
+				if (selectedItemPosition == 1) balanceOrderJSON = "Second";
+				if (selectedItemPosition == 2) balanceOrderJSON = "Third";
+				if (selectedItemPosition == 3) balanceOrderJSON = "We cant balance";
 			}
 
 			public void onNothingSelected(AdapterView<?> parent) {

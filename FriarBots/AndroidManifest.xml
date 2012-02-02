@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.serviterobotics.friarbots"
-    android:versionCode="6"
-    android:versionName="0.2.1" >
+    android:versionCode="7"
+    android:versionName="0.2.5" >
 
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="13" />
 
@@ -19,17 +19,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter></activity>
         <activity android:name=".FriarBotsActivity" ></activity>
-        <activity android:name="StatusActivity"></activity>
-        <activity android:name="CodeActivity"></activity>
-        <activity android:name="DriveSystemsActivity"></activity>
-        <activity android:name="BalanceActivity"></activity>
-        <activity android:name="ShooterActivity"></activity>
-        <activity android:name="AboutActivity"></activity>
-        <activity android:name="GalleryActivity"></activity>
-        <activity android:name="PostsActivity"></activity>
-        <activity android:name="ScoutingActivity"></activity>
-        <activity android:name="ChangeLogActivity"></activity>
-        <activity android:name="CalendarActivity"></activity>
+        <activity android:name="StatusActivity" android:label="@string/status" android:icon="@android:drawable/ic_menu_agenda"></activity>
+        <activity android:name="CodeActivity" android:label="@string/code" android:icon="@drawable/ic_menu_code"></activity>
+        <activity android:name="DriveSystemsActivity" android:label="@string/drive_systems" android:icon="@android:drawable/ic_menu_preferences"></activity>
+        <activity android:name="BalanceActivity" android:label="@string/balance" android:icon="@android:drawable/ic_menu_always_landscape_portrait"></activity>
+        <activity android:name="ShooterActivity" android:label="@string/shooter" android:icon="@android:drawable/ic_menu_add"></activity>
+        <activity android:name="AboutActivity" android:label="@string/about" android:icon="@android:drawable/ic_menu_info_details"></activity>
+        <activity android:name="GalleryActivity" android:label="@string/gallery" android:icon="@android:drawable/ic_menu_gallery"></activity>
+        <activity android:name="PostsActivity" android:label="@string/posts" android:icon="@android:drawable/ic_menu_my_calendar"></activity>
+        <activity android:name="ScoutingActivity" android:label="@string/scouting" android:icon="@android:drawable/ic_menu_myplaces"></activity>
+        <activity android:name="ChangeLogActivity" android:label="@string/changelog" android:icon="@android:drawable/ic_menu_recent_history"></activity>
+        <activity android:name="CalendarActivity" android:label="@string/calendar" android:icon="@android:drawable/ic_menu_today"></activity>
         
         
     </application>

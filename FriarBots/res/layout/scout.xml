@@ -48,7 +48,28 @@
 			<ImageView
 		        android:src="@color/black"
 		        android:layout_height="@dimen/divider_big"
-		        android:layout_width="match_parent" />r
+		        android:layout_width="match_parent" />
+			
+			<TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/TextView_ScoutTest" />
+		    
+			<TextView
+			    android:text="@string/played_with"
+			    android:layout_height="wrap_content"
+			    android:layout_width="match_parent"
+			    android:textColor="@color/lightgrey"
+			    android:textSize="@dimen/regular_text" />
+			<Spinner
+			    android:id="@+id/Spinner_PlayedWith"
+			    android:layout_width="200dp"
+			    android:layout_height="wrap_content"
+			    android:entries="@array/num_played_with" />
+			<ImageView
+		        android:src="@color/black"
+		        android:layout_height="@dimen/divider_big"
+		        android:layout_width="match_parent" />
 		
 		    <TextView
 		        android:layout_width="match_parent"
@@ -119,12 +140,16 @@
 		        android:textSize="@dimen/regular_text"
 		        android:layout_height="wrap_content"
 		        android:layout_width="match_parent"
-		        android:text="@string/balance_rank" />
+		        android:text="@string/balance_order" />
 		    <Spinner
-		        android:id="@+id/Spinner_BalanceRank"
+		        android:id="@+id/Spinner_BalanceOrder"
 		        android:layout_width="200dp"
 		        android:layout_height="wrap_content"
-		        android:entries="@array/number_balance" />
+		        android:entries="@array/balance_order" />
+		    <ImageView
+		        android:layout_height="@dimen/divider_big"
+		        android:layout_width="match_parent"
+		        android:src="@color/black" />
 		        
 		    
 		    
