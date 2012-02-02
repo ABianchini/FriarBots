@@ -1,5 +1,12 @@
 package org.serviterobotics.friarbots;
 
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -39,9 +46,9 @@ public class ScoutingActivity extends BotsActivity {
         
     }
     
-    /*private void onUploadButtonClick(View view) {
+    private void onUploadButtonClick(View view) {
     	writeJSON();
-    }*/
+    }
     
     private void initBalanceRanking() {
     	final RatingBar ratingbar = (RatingBar) findViewById(R.id.RatingBar_Balance);
@@ -61,8 +68,15 @@ public class ScoutingActivity extends BotsActivity {
     	}
     	//TextView scoutTest = (TextView) findViewById(R.id.TextView_ScoutTest);
     	//scoutTest.setText(object);
-    	Log.d("test","Maybe this JSON worked"+object);
-    	//System.out.println(object);
+    	HttpPost post = new HttpPost("TODO"); //TODO enter url
+    	try {
+    		post.setHeader("Content-type", "application/json");
+    		post.setHeader("Accept", "application/json");
+			post.setEntity(new StringEntity(object.toString(), "UTF-8"));
+			new DefaultHttpClient().execute(post);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
     }
     
     private void initTeamNumEdit() {

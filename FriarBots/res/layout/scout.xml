@@ -109,6 +109,23 @@
 		        android:layout_height="wrap_content"
 		        android:id="@+id/RatingBar_Balance"
 		        android:numStars="5" />
+		    <ImageView
+		        android:layout_height="@dimen/divider_big"
+		        android:layout_width="match_parent"
+		        android:src="@color/grey" />
+		    
+		    <TextView
+		        android:textColor="@color/lightgrey"
+		        android:textSize="@dimen/regular_text"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:text="@string/balance_rank" />
+		    <Spinner
+		        android:id="@+id/Spinner_BalanceRank"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/number_balance" />
+		        
 		    
 		    
 		    

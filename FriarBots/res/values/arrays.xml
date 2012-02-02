@@ -19,4 +19,12 @@
         <item>@string/cant</item>
     </string-array>
     
+    <string-array name="balance_order">
+        <item>@string/first</item>
+        <item>@string/second</item>
+        <item>@string/third</item>
+        <item>@string/cant</item>
+    </string-array>
+    
+    
 </resources>
