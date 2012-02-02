@@ -1,5 +1,8 @@
 package org.serviterobotics.friarbots;
 
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -57,17 +60,20 @@ public class ScoutingActivity extends BotsActivity {
     private void writeJSON() {
     	JSONObject object = new JSONObject();
     	try {
-    		object.put("teamNumber", new String(teamNumberJSON));
-    		object.put("ROE", new String(offDefJSON));
-    		object.put("crossMethod", new String(crossMethodJSON));
-    		object.put("numRobotsBalanceWith", new String(numBalanceJSON));
-    		object.put("balanceRank", new String(balanceRankJSON));
-    		object.put("otherNotes", new String(otherNotesJSON));
+    		object.put("teamNumber", teamNumberJSON);
+    		object.put("ROE", offDefJSON);
+    		object.put("crossMethod", crossMethodJSON);
+    		object.put("numRobotsBalanceWith", numBalanceJSON);
+    		object.put("balanceRank", balanceRankJSON);
+    		object.put("otherNotes", otherNotesJSON);
+    		object.put("balanceOrder", balanceOrderJSON);
+    		object.put("numPlayedWith", numPlayedWithJSON);
+    		object.put("oppBalanceExist", oppBalanceExistJSON);
     	} catch (JSONException e) {
     		e.printStackTrace();
     	}
     	System.out.println(object);
-    	/*HttpPost post = new HttpPost("TODO"); //TODO enter url
+        HttpPost post = new HttpPost("http://3309scouting.appspot.com/frcscoutingupload");
     	try {
     		post.setHeader("Content-type", "application/json");
     		post.setHeader("Accept", "application/json");
@@ -75,7 +81,7 @@ public class ScoutingActivity extends BotsActivity {
 			new DefaultHttpClient().execute(post);
 		} catch (Exception e) {
 			e.printStackTrace();
-		}*/
+		}
     }
     
     private void initTeamNumEdit() {

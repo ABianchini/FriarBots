@@ -5,6 +5,7 @@
     android:versionName="0.2.5" >
 
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="13" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:icon="@drawable/icon"
@@ -30,6 +31,7 @@
         <activity android:name="ScoutingActivity" android:label="@string/scouting" android:icon="@android:drawable/ic_menu_myplaces"></activity>
         <activity android:name="ChangeLogActivity" android:label="@string/changelog" android:icon="@android:drawable/ic_menu_recent_history"></activity>
         <activity android:name="CalendarActivity" android:label="@string/calendar" android:icon="@android:drawable/ic_menu_today"></activity>
+        <activity android:name=".TeamInfoActivity" android:label="@string/team_info"></activity>
         
         
     </application>
