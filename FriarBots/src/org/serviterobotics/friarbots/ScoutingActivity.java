@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.AsyncTask;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -73,15 +74,21 @@ public class ScoutingActivity extends BotsActivity {
     		e.printStackTrace();
     	}
     	System.out.println(object);
-        HttpPost post = new HttpPost("http://3309scouting.appspot.com/frcscoutingupload");
-    	try {
-    		post.setHeader("Content-type", "application/json");
-    		post.setHeader("Accept", "application/json");
-			post.setEntity(new StringEntity(object.toString(), "UTF-8"));
-			new DefaultHttpClient().execute(post);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+    	AsyncTask postTask = new AsyncTask<Void, Void, Void>(){
+    		@Override
+    		public void doInBackground(Void... params){
+    			HttpPost post = new HttpPost("http://3309scouting.appspot.com/frcscoutingupload");
+    			try {
+    				post.setHeader("Content-type", "application/json");
+    				post.setHeader("Accept", "application/json");
+    				post.setEntity(new StringEntity(object.toString(), "UTF-8"));
+    				new DefaultHttpClient().execute(post);
+    			} catch (Exception e) {
+    				e.printStackTrace();
+    			}
+    		}
+    	};
+    	postTask.execute();
     }
     
     private void initTeamNumEdit() {
