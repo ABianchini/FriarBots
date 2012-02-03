@@ -37,6 +37,9 @@
 	<string name="opponent_questions">Opponent Questions</string>
 	<string name="team_info">Team Information</string>
 	<string name="wont">We won\'t on this bridge</string>
+	<string name="oh_no">OH NO!!!</string>
+	<string name="left_blank">You left a field blank!!!</string>
+	<string name="na">NA</string>
 	
     
 	    

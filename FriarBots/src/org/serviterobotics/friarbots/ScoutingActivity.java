@@ -8,8 +8,8 @@ import org.json.JSONObject;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -45,8 +45,12 @@ public class ScoutingActivity extends BotsActivity {
     }
     
     public void onUploadButtonClick(View view) {
-    	writeJSON();
-    	Toast.makeText(this, "Not Uploaded", Toast.LENGTH_SHORT).show();
+    	if (balanceRankJSON.equals("herp") || balanceRankJSON.equals("herp") || otherNotesJSON.equals("herp")) {
+    		popIt(R.string.oh_no, R.string.left_blank);
+    	} else {
+    		//popIt(R.string.oh_no, R.string.yes);
+    		writeJSON();
+    	}
     }
     
     private void initBalanceRanking() {
@@ -59,14 +63,14 @@ public class ScoutingActivity extends BotsActivity {
     }
     
     private void writeJSON() {
-    	JSONObject object = new JSONObject();
+    	final JSONObject object = new JSONObject();
     	try {
-    		object.put("teamNumber", teamNumberJSON);
+    		//object.put("teamNumber", teamNumberJSON);
     		object.put("ROE", offDefJSON);
     		object.put("crossMethod", crossMethodJSON);
     		object.put("numRobotsBalanceWith", numBalanceJSON);
-    		object.put("balanceRank", balanceRankJSON);
-    		object.put("otherNotes", otherNotesJSON);
+    		//object.put("balanceRank", balanceRankJSON);
+    		//object.put("otherNotes", otherNotesJSON);
     		object.put("balanceOrder", balanceOrderJSON);
     		object.put("numPlayedWith", numPlayedWithJSON);
     		object.put("oppBalanceExist", oppBalanceExistJSON);
@@ -74,9 +78,9 @@ public class ScoutingActivity extends BotsActivity {
     		e.printStackTrace();
     	}
     	System.out.println(object);
-    	AsyncTask postTask = new AsyncTask<Void, Void, Void>(){
+    	AsyncTask<Void, Void, Void> postTask = new AsyncTask<Void, Void, Void>(){
     		@Override
-    		public void doInBackground(Void... params){
+    		public Void doInBackground(Void... params){
     			HttpPost post = new HttpPost("http://3309scouting.appspot.com/frcscoutingupload");
     			try {
     				post.setHeader("Content-type", "application/json");
@@ -86,6 +90,7 @@ public class ScoutingActivity extends BotsActivity {
     			} catch (Exception e) {
     				e.printStackTrace();
     			}
+				return null;
     		}
     	};
     	postTask.execute();
@@ -212,6 +217,7 @@ public class ScoutingActivity extends BotsActivity {
     	otherNotes.addTextChangedListener(new TextWatcher() {
             public void afterTextChanged(Editable s) {
             	EditText otherNotes = (EditText) findViewById(R.id.EditText_OtherNotes);
+                System.out.println(otherNotesJSON);
                 otherNotesJSON = otherNotes.getText().toString();
             }
             // ... other required overrides need not be implemented 

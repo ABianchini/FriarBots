@@ -27,13 +27,13 @@ public class BotsActivity extends Activity {
 	public static final String MANUAL_UPDATES = "manUp";
 	public static final String SCOUT_DATA_OFF_DEF = "off_def";
 	
-	public String teamNumberJSON;
+	public String teamNumberJSON = "herp";
 	public String numPlayedWithJSON;
 	public String offDefJSON;
 	public String crossMethodJSON;
-	public String otherNotesJSON;
+	public String otherNotesJSON = "herp";
 	public String numBalanceJSON;
-	public String balanceRankJSON;
+	public String balanceRankJSON = "herp";
 	public String balanceOrderJSON;
 	public String oppBalanceExistJSON;
 	
