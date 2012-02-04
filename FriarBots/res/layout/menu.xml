@@ -239,7 +239,7 @@
 		        </LinearLayout>
 		    </LinearLayout>
 		    
-	        <ImageView
+	        <!--<ImageView
 	            android:layout_height="@dimen/divider_small"
 	            android:layout_width="match_parent"
 	            android:src="@color/grey" />
@@ -274,7 +274,7 @@
 		                android:textSize="@dimen/menu_text"
 		                android:textColor="@color/lightgrey" />
 		        </LinearLayout>
-		    </LinearLayout>
+		    </LinearLayout>-->
 		    
 	    	<ImageView
 	    	    android:src="@color/grey"
