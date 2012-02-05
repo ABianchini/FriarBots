@@ -25,7 +25,6 @@ public class ScoutingActivity extends BotsActivity {
 	SharedPreferences scoutingData;
 	
 	
-	//TODO pull and parse JSON
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {

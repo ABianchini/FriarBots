@@ -6,7 +6,6 @@ import android.view.View;
 
 public class AboutActivity extends BotsActivity {
 	
-	//TODO Shared settings (for manual and automatic updates)
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
